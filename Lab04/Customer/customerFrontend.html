@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="formChecker.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title> Banana Mart </title>
+</head>
+<body>
+  <div class = "center">
+    <form action="customerBackend.php" method="post" onsubmit="return toSubmit();" >
+    E-mail: <input type="email" name="email" id = "user" ><br>
+    Password: <input type="password" name="password" id = "password"><br>
+
+    Bananas ($1.00): <input type="number" name="item1" id = "item1" min = "0" style="width: 30px"><br>
+    Apples ($2.00): <input type="number" name="item2" id = "item2" min = "0" style="width: 30px"><br>
+    AK47s ($500): <input type="number" name="item3" id = "item3" min = "0" style="width: 30px" ><br>
+
+    Select shipping type:
+    <input type="radio" name="type" value = "Free" id = "type1">Free 7 Day<br>
+    <tab1> <input type="radio" name="type" value = "Over night" id = "type2">$50.00 over night<br>
+    <tab2> <input type="radio" name="type" value = "Three day" id = "type3">$5.00 three day<br>
+
+      <input type="submit">
+    <input type="button" id="clear" onclick="clearFields()" value="Clear"> </p>
+  </div>
+    </form>
+  </body>
+</html>
